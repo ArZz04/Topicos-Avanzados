@@ -1,0 +1,33 @@
+@startuml
+class Autor {
+  - id: int
+  - nombre: String
+  - aPaterno: String
+  - aMaterno: String
+  - ciudad: String
+
+  + Autor()
+  + Autor(id: int, nombre: String, aPaterno: String, aMaterno: String, ciudad: String)
+  + getId(): int
+  + setId(id: int): void
+  + getNombre(): String
+  + setNombre(nombre: String): void
+  + getaPaterno(): String
+  + setaPaterno(aPaterno: String): void
+  + getaMaterno(): String
+  + setaMaterno(aMaterno: String): void
+  + getCiudad(): String
+  + setCiudad(ciudad: String): void
+}
+
+class Main {
+  + main(args: String[]): void
+  + registerAutor(): Autor
+  + findUser(autors: Autor[]): Autor
+  + showAutors(autors: Autor[]): String
+  + modifyAutor(autors: Autor[]): void
+  + deleteAutor(autors: Autor[]): void
+}
+
+
+@enduml
