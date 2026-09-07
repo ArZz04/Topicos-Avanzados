@@ -3,7 +3,14 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Card from '../components/Card.astro';
-import { SITE_TITLE, SITE_DESCRIPTION, FIGURAS_DESCRIPTION, PERSONAS_DESCRIPTION, BANCO_DESCRIPTION, METODOS_DESCRIPTION, BIBLIOTECA_DESCRIPTION } from '../consts';
+
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  CU_11_DESCRIPTION,
+  F_11_DESCRIPTION,
+  REC_11_DESCRIPTION
+} from '../consts';
 ---
 
 <!doctype html>
@@ -11,33 +18,53 @@ import { SITE_TITLE, SITE_DESCRIPTION, FIGURAS_DESCRIPTION, PERSONAS_DESCRIPTION
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
+
 	<body>
 		<Header />
+
 		<main>
-			<h1>REPORTES DE PRACTICAS</h1>
+			<h1>REPORTES DE PRÁCTICAS</h1>
+
 			<p>
-				En este blog encontraras mis reportes de las practicas realizadas 
-				en el curso de Programacion Orientada a Objetos de la carrera de 
-				Ingenieria en Sistemas Computacionales del Tecnologio Superior de Zapopan.
+				En este blog encontrarás mis reportes de las prácticas realizadas
+				en el curso de Tópicos Avanzados de Programación de la carrera de
+				Ingeniería en Sistemas Computacionales del Tecnológico Superior de Zapopan.
 			</p>
-			<p>Los reportes correspondientes a las practicas son los siguientes:</p>
-			<ul>
-				<Card title='METODOS' body={METODOS_DESCRIPTION}, href='blog/banco' icon='卐'></Card>
-				<br>
-				<Card title='BIBLIOTECA' body={BIBLIOTECA_DESCRIPTION}, href='blog/banco' icon='卐'></Card>
-				<br>
-				<Card title='FIGURAS' body={FIGURAS_DESCRIPTION}, href='blog/figuras' icon='卐'></Card>
-				<br>
-				<Card title='PERSONAS' body={PERSONAS_DESCRIPTION}, href='blog/personas' icon='卍'></Card>
-				<br>
-				<Card title='CUENTA BANCARIA' body={BANCO_DESCRIPTION}, href='blog/banco' icon='卐'></Card>
-			</ul>
+
 			<p>
-				Puedes ir a revisar mis demas repositorios en mi GitHub <a
-					href="https://github.com/ArZz04"
-					>ArZz04</a> por <a href="https://www.instagram.com/ArZz.04">Juan Arvizu</a>.
+				Los reportes correspondientes a las prácticas son los siguientes:
+			</p>
+
+			<ul>
+				<Card
+					title="CALIFICACIONES DE UN ALUMNO"
+					body={CU_11_DESCRIPTION}
+					href="blog/cu11"
+					icon="☭"
+				/>
+				<br />
+				<Card
+					title="FACTORIALES "
+					body={F_11_DESCRIPTION}
+					href="blog/f11"
+					icon="☭"
+				/>
+				<br />
+				<Card
+					title="RAICES DE UNA ECUACION CUADRATICA "
+					body={REC_11_DESCRIPTION}
+					href="blog/rec11"
+					icon="☭"
+				/>
+				<br />
+			</ul>
+
+			<p>
+				Puedes revisar mis demás repositorios en mi GitHub
+				<a href="https://github.com/ArZz04">ArZz04</a>.
 			</p>
 		</main>
+
 		<Footer />
 	</body>
 </html>
