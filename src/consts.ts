@@ -12,3 +12,9 @@ export const F_11_DESCRIPTION =
 
 export const REC_11_DESCRIPTION =
   "El objetivo es aplicar el uso de funciones y estructuras de control en C# para resolver ecuaciones cuadráticas, utilizando la fórmula general y determinando si las raíces son reales distintas, reales iguales o complejas.";
+
+export const IIF_DESCRIPTION =
+  "El objetivo es investigar los fundamentos de las Interfaces Gráficas de Usuario (GUI) y analizar las principales tecnologías de desarrollo en Java (AWT, Swing, JavaFX) y C# (Windows Forms, WPF), evaluando sus componentes, eventos y estándares de usabilidad.";
+
+export const P_12_DESCRIPTION =
+  "El objetivo es aplicar el uso de funciones y estructuras de control en C# para desarrollar ejercicios interactivos mediante la biblioteca Avalonia UI, permitiendo crear interfaces gráficas atractivas y funcionales para los usuarios.";
